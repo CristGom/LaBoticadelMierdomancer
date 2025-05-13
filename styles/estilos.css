@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Spooky';
+    src: url(../font/Spookyman.otf);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(114, 15, 15);
+    font-family: 'Spooky', Spooky;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Spooky', Spooky;
+}
+
+.img1{
+    border: 3px, solid; 
+    border-color: #f2f2f2;
+    border-radius: 3px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+.instagram{
+    width: 30px;
+    height: 30px;
+}
+
+.letterboxd{
+    width: 30px;
+    height: 30px;
+}
+
+.boton{   background-color:#000000;
+    color: rgb(114, 15, 15);;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    }
