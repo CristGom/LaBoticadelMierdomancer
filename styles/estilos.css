@@ -38,8 +38,8 @@ h1, h3{
 }
 
 .twitch{
-width: 30px;
-height: 30px;
+    width: 30px;
+    height: 30px;
 }
 
 footer {
@@ -79,19 +79,17 @@ object-fit: cover;
 display: block;
 }
 
-/* Hover con color y sombra personalizada */
 .social-icons a:hover {
 transform: scale(1.15);
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Colores de marca al pasar el mouse */
 .instagram:hover {
 background-color: #e1306c;
 }
 
 .letterboxd:hover {
-background-color: #00d474; /* verde característico */
+background-color: #00d474; 
 }
 
 .twitch:hover {
