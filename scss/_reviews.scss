@@ -1,0 +1,64 @@
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.2);
+}
+
+.review {
+    background-color: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 12px #ff000088;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: center;
+    position: relative;
+
+    &:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 18px #ff0000aa;
+}
+
+    img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-bottom: 2px solid #ff0000;
+    border-radius: 8px 8px 0 0;
+}
+
+    .review-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    gap: 8px;
+
+    h3 {
+    color: $color-form-label;
+    font-family: $fuente-principal;
+    margin: 0;
+    font-size: 1.1rem;
+    }
+
+    p {
+    color: #ccc;
+    font-size: 0.85rem;
+    margin: 0;
+    }
+
+    .puntuacion {
+    color: gold;
+    font-size: 1.1rem;
+    margin-top: auto;
+    }
+}
+}

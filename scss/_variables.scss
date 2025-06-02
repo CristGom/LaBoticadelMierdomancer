@@ -1,0 +1,18 @@
+$color-fondo: hsl(0, 0%, 0%);
+$color-texto: #f0f0ed;
+$color-borde: red;
+$color-hover: #cc0000;
+$color-header: #000000;
+$color-footer: #000000;
+$color-link: rgb(129, 6, 6);
+$color-form-label: #ff4d4d;
+$color-form-boton: #b30000;
+$color-form-boton-hover: #cc0000;
+$color-sombra: rgba(0, 0, 0, 0.8);
+$color-sombra-roja: rgba(255, 0, 0, 0.3);
+$fuente-principal: 'Spooky', sans-serif;
+@mixin mobile {
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+        @content;
+    }
+}

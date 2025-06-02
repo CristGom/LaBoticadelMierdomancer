@@ -1,0 +1,118 @@
+@media (min-width: 375px) and (max-width: 767px) {
+    header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    text-align: center;
+
+    .logo {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    nav {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+        width: max-content;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+
+    li {
+        width: 20ch;
+        text-align: center;
+        padding: 5px;
+        white-space: nowrap;
+    }
+    }
+}
+
+    footer {
+    padding: 15px;
+    gap: 20px;
+    text-align: center;
+
+    .social-icons {
+        gap: 20px;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    a img {
+        width: 35px;
+        height: 35px;
+
+        &:hover {
+        transform: scale(1.15);
+        box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+        }
+    }
+    }
+}
+
+    .container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+    .carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+    .galeria-container {
+    padding: 10px;
+    margin: 20px auto;
+
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .pelicula {
+        padding: 8px;
+
+    img {
+        border-width: 1px;
+    }
+    }
+}
+
+    .formulario {
+    grid-template-columns: 1fr;
+    padding: 15px;
+    gap: 15px;
+    width: 90%;
+
+    button {
+    width: 100%;
+    }
+
+    .radio-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    }
+}
+
+    .img1 {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+    .about-container {
+    width: 90%;
+    padding: 15px;
+    margin: 30px auto;
+}
+}
