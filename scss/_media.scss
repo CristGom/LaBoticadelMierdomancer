@@ -13,7 +13,7 @@
     }
 
     nav {
-        display: grid;
+        display: flex;
         grid-auto-flow: column;
         gap: 10px;
         width: max-content;

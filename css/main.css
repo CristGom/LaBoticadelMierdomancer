@@ -18,7 +18,7 @@
 }
 .formulario input[type=text],
 .formulario textarea {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   background-color: #2e2e2e;
   color: #fff;
@@ -55,7 +55,7 @@
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
-  width: 200px;
+  width: 100px;
   margin: 0 auto;
   font-family: "Spooky", sans-serif;
 }
@@ -150,20 +150,27 @@ header {
   padding: 20px;
   background-color: #000000;
 }
-header .logo {
+
+.logo {
   max-width: 400px;
   height: auto;
   margin-bottom: 20px;
 }
-header nav .menu {
+
+nav {
+  position: relative;
+}
+
+.menu {
   list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
   margin: 0;
   padding: 0;
 }
-header nav .menu li a {
+
+li a {
   text-decoration: none;
   color: rgb(129, 6, 6);
   font-weight: bold;
@@ -172,10 +179,36 @@ header nav .menu li a {
   background-color: #1a1919;
   transition: opacity 0.3s;
 }
-header nav .menu li a:hover {
+li a:hover {
   background-color: #000000;
 }
 
+.active {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  header nav .menu .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #111;
+    width: 100%;
+    padding: 10px;
+  }
+  header nav li a {
+    text-decoration: none;
+    color: rgb(129, 6, 6);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #1a1919;
+    transition: opacity 0.3s;
+  }
+  header nav li a:hover {
+    background-color: #000000;
+  }
+}
 footer {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, auto);
@@ -287,7 +320,7 @@ footer .social-icons a img:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 }
 
-@media (min-width: 350px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 767px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -301,7 +334,7 @@ footer .social-icons a img:hover {
     margin-bottom: 15px;
   }
   header nav {
-    display: grid;
+    display: flex;
     grid-auto-flow: column;
     gap: 10px;
     width: max-content;
@@ -459,4 +492,4 @@ footer .social-icons a img:hover {
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=main.css.map */

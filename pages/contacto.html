@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../styles/estilos.css">
+    <meta name="description" content="Fan del terror como yo? Encontrá pelis imperdibles, reseñas sinceras y un sitio tan oscuro como nuestro género favorito. Por Bela.">
+    <meta name="keywords" content="contacto,mail,whatsapp,formulario,recomendaciones">
+    <meta name="author" content="Cristina Gomez">
 </head>
 <body>
     <header>
@@ -35,6 +38,32 @@
     O por WhatsApp: <a href="https://wa.me/5491123456789" target="_blank">+54 9 11 2345 6789</a>
 </p>
 </section>
+
+    <form class="formulario">
+    <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Escribí tu nombre" required>
+
+        <label for="pelicula">Película Sugerida</label>
+        <input type="text" id="pelicula" placeholder="Nombre de la película" required>
+    </div>
+
+    <div>
+        <label for="motivo">¿Por qué querés que la comente?</label>
+        <textarea id="motivo" rows="5" placeholder="Contame tu motivo..." required></textarea>
+    </div>
+
+    <div class="radio-group">
+        <label>¿Ya la viste?</label>
+        <input type="radio" name="vista" id="si" value="si">
+        <label for="si">Sí</label>
+        <input type="radio" name="vista" id="no" value="no">
+        <label for="no">No</label>
+    </div>
+
+    <button type="submit">Recomendar</button>
+    </form>
+    </div>
     </main>
 <footer>
 <h2>Derechos reservados</h2>

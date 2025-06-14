@@ -12,7 +12,7 @@ $color-sombra: rgba(0, 0, 0, 0.8);
 $color-sombra-roja: rgba(255, 0, 0, 0.3);
 $fuente-principal: 'Spooky', sans-serif;
 @mixin mobile {
-    @media screen and (min-width: 375px) and (max-width: 767px) {
+    @media screen and (min-width: 350px) and (max-width: 767px) {
         @content;
     }
 }
