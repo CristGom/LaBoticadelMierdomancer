@@ -18,7 +18,7 @@
 }
 .formulario input[type=text],
 .formulario textarea {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   background-color: #2e2e2e;
   color: #fff;
@@ -55,7 +55,7 @@
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
-  width: 200px;
+  width: 100px;
   margin: 0 auto;
   font-family: "Spooky", sans-serif;
 }
@@ -155,6 +155,9 @@ header .logo {
   height: auto;
   margin-bottom: 20px;
 }
+header nav {
+  position: relative;
+}
 header nav .menu {
   list-style: none;
   display: flex;
@@ -163,7 +166,7 @@ header nav .menu {
   margin: 0;
   padding: 0;
 }
-header nav .menu li a {
+header li a {
   text-decoration: none;
   color: rgb(129, 6, 6);
   font-weight: bold;
@@ -172,8 +175,21 @@ header nav .menu li a {
   background-color: #1a1919;
   transition: opacity 0.3s;
 }
-header nav .menu li a:hover {
+header li a:hover {
   background-color: #000000;
+}
+header .active {
+  display: flex;
+}
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  header nav .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #111;
+    width: 100%;
+    padding: 10px 0;
+  }
 }
 
 footer {
@@ -287,11 +303,11 @@ footer .social-icons a img:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 }
 
-@media (min-width: 350px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 767px) {
   header {
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 15px 10px;
     text-align: center;
   }
   header .logo {
@@ -301,7 +317,7 @@ footer .social-icons a img:hover {
     margin-bottom: 15px;
   }
   header nav {
-    display: grid;
+    display: flex;
     grid-auto-flow: column;
     gap: 10px;
     width: max-content;

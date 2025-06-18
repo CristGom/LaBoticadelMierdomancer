@@ -4,16 +4,16 @@ header {
     align-items: center;
     padding: 20px;
     background-color: $color-header;
-}
+
     .logo {
-    max-width: 400px;
-    height: auto;
-    margin-bottom: 20px;
-}
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 20px;
+    }
 
     nav {
-    position: relative;
-    }
+        position: relative;
+
         .menu {
             list-style: none;
             display: flex;
@@ -21,40 +21,10 @@ header {
             gap: 10px;
             margin: 0;
             padding: 0;
-    }
-    li {
-        a {
-        text-decoration: none;
-        color: $color-link;
-        font-weight: bold;
-        padding: 10px 20px;
-        border-radius: 5px;
-        background-color: #1a1919;
-        transition: opacity 0.3s;
-
-        &:hover {
-            background-color: #000000;
-            }
         }
     }
 
-    .active {
-        display: flex;
-    }
-@media (max-width: 768px) {
-    header {
-    nav {
-    .menu {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        background-color: #111;
-        width: 100%;
-        padding: 0;
-    }
-        li {
+    li {
         a {
             text-decoration: none;
             color: $color-link;
@@ -65,11 +35,27 @@ header {
             transition: opacity 0.3s;
 
             &:hover {
-            background-color: #000000;
+                background-color: #000000;
             }
         }
-        }
     }
+
+    .active {
+        display: flex;
+    }
+
+    // Ahora aplicamos el mixin para estilos mobile
+    @include mobile {
+        nav {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                background-color: #111;
+                width: 100%;
+                padding: 10px 0;
+            }
+        }
     }
 }
 
@@ -134,8 +120,7 @@ footer {
         }
     }
 }
-@mixin mobile {
-    @media screen and (min-width: 375px) and (max-width: 767px) {
-        @content;
-    }
+
+@include mobile{
+    
 }
